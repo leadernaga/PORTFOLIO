@@ -12,13 +12,13 @@
     display: grid;
     place-items: center;
 }
-/* .myimg{
-    height: 25rem;
+.myimg{
+    height: 28rem;
     width: 25rem;
     -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
 box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
-} */
+}
 .about__me-image{
     border-radius: 2rem;
     overflow: hidden;

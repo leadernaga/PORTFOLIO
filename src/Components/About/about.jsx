@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css";
-import ME from "../../assets/color.png";
+import ME from "../../assets/MEEbg1.png";
 import { FaAward,FaGraduationCap } from "react-icons/fa"
 import { FiUsers } from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc"
