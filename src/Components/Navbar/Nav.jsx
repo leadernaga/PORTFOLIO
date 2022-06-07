@@ -11,34 +11,34 @@ export const Nav = () => {
   
   return (
       <div className="nav">
-      <a onMouseOver={()=>setOver("hom")} data-tip data-for='home' href="#" onClick={() => setState("#")} className={state === "#" ? "active" : ""}><AiOutlineHome />
-      {over == "home" && <ReactTooltip id='home' type='info'>
+      <a onMouseOver={()=>setOver("hom")} data-tip data-for='ho' href="#" onClick={() => setState("#")} className={state === "#" ? "active" : ""}><AiOutlineHome />
+      {over == "home" && <ReactTooltip id='ho' type='info'>
            <span>HOME</span>
          </ReactTooltip>}
       </a>
          
 
-      <a data-tip data-for='about' href="#about" onClick={() => setState("about")} className={state === "about" ? "active" : ""}><AiOutlineUser />
-      <ReactTooltip id='about' type='info'>
+      <a data-tip data-for='abt' href="#about" onClick={() => setState("about")} className={state === "about" ? "active" : ""}><AiOutlineUser />
+      <ReactTooltip id='abt' type='info'>
            <span>ABOUT</span>
          </ReactTooltip>
       </a>
-      <a data-tip data-for='experience' href="#experience" onClick={() => setState("experience")} className={state === "experience" ? "active" : ""}>< BiBook />
-      <ReactTooltip id='experience' type='info'>
+      <a data-tip data-for='exp' href="#experience" onClick={() => setState("experience")} className={state === "experience" ? "active" : ""}>< BiBook />
+      <ReactTooltip id='exp' type='info'>
            <span>EXPERIENCE</span>
          </ReactTooltip>
         
       </a>
       
 
-      <a data-tip data-for='project' href="#portfolio" onClick={() => setState("services")} className={state === "services" ? "active" : ""}><RiServiceLine />
+      <a data-tip data-for='prj' href="#portfolio" onClick={() => setState("services")} className={state === "services" ? "active" : ""}><RiServiceLine />
       
-      <ReactTooltip id='project' type='info'>
+      <ReactTooltip id='prjt' type='info'>
            <span>PROJECT</span>
          </ReactTooltip>
       </a>
-      <a data-tip data-for='contact' href="#contact" onClick={() => setState("contact")} className={state === "contact" ? "active" : ""}><BiMessageSquareDetail />
-      <ReactTooltip id='contact' type='info'>
+      <a data-tip data-for='cntct' href="#contact" onClick={() => setState("contact")} className={state === "contact" ? "active" : ""}><BiMessageSquareDetail />
+      <ReactTooltip id='cntct' type='info'>
            <span>CONTACT US</span>
          </ReactTooltip>
       </a>
