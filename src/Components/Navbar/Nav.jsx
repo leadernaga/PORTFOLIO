@@ -9,16 +9,16 @@ import 'tippy.js/dist/tippy.css';
 
 export const Nav = () => {
   const [state, setState] = useState("#");
-  tippy('#m', {
-  content: "I'm a Tippy tooltip!",
+  tippy('#hm', {
+  content: "home",
 });
   
   
   return (
     <div className="nav">
-      <tippy content="home">
+      
       <a id="hm" data-tip data-for='ho' href="#" onClick={() => setState("#")} className={state === "#" ? "active" : ""}><AiOutlineHome /></a>
-        </tippy> 
+        
 
       <a id="m" href="#about" onClick={() => setState("about")} className={state === "about" ? "active" : ""}><AiOutlineUser />
       
