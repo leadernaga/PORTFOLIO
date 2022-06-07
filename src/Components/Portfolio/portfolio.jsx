@@ -11,7 +11,8 @@ const Portfolio = () => {
       img: BigBasket,
       title: "Big Basket Clone",
       Github: "https://github.com/S-hub1996/Big-basket-clone",
-      Live: "https://big-basket-clone-by-masai-school.netlify.app/"
+      Live: "https://big-basket-clone-by-masai-school.netlify.app/",
+      
     },
      {
       img: Beardo,
@@ -40,6 +41,7 @@ const Portfolio = () => {
               <img src={elm.img} alt="bigbasket" />
             </div>
             <h3>{elm.title}</h3>
+            
             <div className="portfolio__item-cta">
               <a href={elm.Github} className='btn' target="__blank">Github</a>
               <a href={elm.Live} className='btn btn-primary' target="__blank">Live Demo</a>
