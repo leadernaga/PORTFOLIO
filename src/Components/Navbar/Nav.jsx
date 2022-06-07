@@ -5,6 +5,8 @@ import { BiBook,BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
+import 'tippy.js/themes/light.css';
 
 
 export const Nav = () => {
@@ -13,19 +15,28 @@ export const Nav = () => {
     content: "home",
     animation: "scale",
     theme: 'light',
+    
 
   });
   tippy('#ab', {
-  content: "about",
+    content: "about",
+    animation: "scale",
+    theme: 'light',
   });
   tippy('#exp', {
-  content: "skills",
+    content: "skills",
+    animation: "scale",
+    theme: 'light',
   });
   tippy('#prj', {
-  content: "projects",
+    content: "projects",
+    animation: "scale",
+    theme: 'light',
   });
   tippy('#cntct', {
-  content: "contact",
+    content: "contact",
+    animation: "scale",
+    theme: 'light',
 });
   
   
