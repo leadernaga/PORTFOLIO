@@ -81,7 +81,7 @@ box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
 @media screen and (max-width:850px) {
    .about__container{
        grid-template-columns:1fr;
-       gap:0;
+       gap:2rem;
    }
    .about__me{
        width:50%;

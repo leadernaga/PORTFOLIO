@@ -11,8 +11,9 @@ header {
 .myimage {
   /* transform: scale(1); */
   /* margin-left:30px; */
-  height: 300px;
+  height: 50vh;
   width: 300px;
+  
 }
 
 /* ################ CTA #####################*/
@@ -51,8 +52,8 @@ header {
   transform: translateX(-50%);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  /* overflow: hidden; */
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 /* ######################## Scroll Down ############################*/
@@ -70,15 +71,15 @@ header {
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 70vh !important;
+    height: 100vh !important;
   }
 }
 @media screen and (max-width: 850px) {
   header {
     height: 70vh;
   }
-  .header__container{
-    height:
+  .header__container .me {
+    overflow: hidden;
   }
 }
 
@@ -86,7 +87,10 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh !important ;
+    height: 100vh ;
+  }
+  .me{
+    height: 100vh ;
   }
   .header__socials,
   .scroll__down {
