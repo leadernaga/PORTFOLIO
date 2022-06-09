@@ -1,7 +1,7 @@
 header {
   height: 100vh;
   padding-top: 7rem;
-  overflow:hidden;
+  overflow: hidden;
 }
 .header__container {
   text-align: center;
@@ -13,7 +13,6 @@ header {
   /* margin-left:30px; */
   height: 50vh;
   width: 300px;
-  
 }
 
 /* ################ CTA #####################*/
@@ -36,7 +35,7 @@ header {
   bottom: 3rem;
 }
 .header__socials::after {
-  content: '';
+  content: "";
   width: 1px;
   height: 2rem;
   background: var(--color-primary);
@@ -52,7 +51,7 @@ header {
   transform: translateX(-50%);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -68,15 +67,32 @@ header {
 }
 
 /* ########################## MEDIA QUERIES (MEDIUM DEVICES) ########################## */
+@media screen and (max-width: 3000px) {
+  header {
+    height: 70vh !important;
+  }
+  .myimage {
+    height: 40vh;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 100vh !important;
+    height: 70vh !important;
+  }
+  .myimage {
+    height: 40vh;
+  }
+  .me {
+    overflow: hidden;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   header {
-    height: 70vh;
+    height: 70vh !important;
+  }
+  .myimage {
+    height: 40vh;
   }
   .header__container .me {
     overflow: hidden;
@@ -85,12 +101,12 @@ header {
 
 /* ########################## MEDIA QUERIES (SMALL DEVICES) ########################## */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header {
-    height: 100vh ;
+    height: 70vh !important;
   }
-  .me{
-    height: 100vh ;
+  .me {
+    height: 100vh;
   }
   .header__socials,
   .scroll__down {
