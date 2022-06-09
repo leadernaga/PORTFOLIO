@@ -67,6 +67,16 @@ header {
 }
 
 /* ########################## MEDIA QUERIES (MEDIUM DEVICES) ########################## */
+@media screen and (max-height: 900px) {
+  .me{
+    display: none;
+  }
+  .header__socials,.scroll__down{
+    display: none;
+  }
+  
+  }
+
 @media screen and (max-width: 3000px) {
   header {
     height: 70vh !important;
@@ -103,13 +113,33 @@ header {
 
 @media screen and (max-width: 700px) {
   header {
-    height: 70vh !important;
+    height: 100vh !important;
   }
   .me {
-    height: 100vh;
+    height: 100vh !important;
+  }
+  .myimage {
+    height: 50vh;
   }
   .header__socials,
   .scroll__down {
     display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .me {
+    display: none;
+  }
+  header {
+    height: 50vh !important;
+  }
+  .header__container {
+    font-size: 0.9rem;
+  }
+  .container > h1 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.1rem;
   }
 }
