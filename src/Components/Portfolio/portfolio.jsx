@@ -9,24 +9,21 @@ import 'tippy.js/animations/scale.css'
 import 'tippy.js/themes/light.css'
 
 const Portfolio = () => {
-  tippy('#p0', {
-    content: 'Buid with : React Redux JavaScript CSS Material UI React Icons',
-    animation: 'scale',
-    theme: 'light',
-  });
- tippy('#p1', {
-    content: 'Buid with :JavaScript HTNL CSS LocalStorage',
-    animation: 'scale',
-    theme: 'light',
- });
-   tippy('#p0', {
-    content: 'Buid with : React Redux JavaScript LocalStorage',
-    animation: 'scale',
-    theme: 'light',
-  });
-
-
-  
+  // tippy('#p0', {
+  //   content: 'Buid with : React Redux JavaScript CSS Material UI React Icons',
+  //   animation: 'scale',
+  //   theme: 'light',
+  // })
+  // tippy('#p1', {
+  //   content: 'Buid with :JavaScript HTNL CSS LocalStorage',
+  //   animation: 'scale',
+  //   theme: 'light',
+  // })
+  // tippy('#p0', {
+  //   content: 'Buid with : React Redux JavaScript LocalStorage',
+  //   animation: 'scale',
+  //   theme: 'light',
+  // })
 
   const arr = [
     {
@@ -35,6 +32,7 @@ const Portfolio = () => {
       Github: 'https://github.com/S-hub1996/Big-basket-clone',
       Live: 'https://big-basket-clone-by-masai-school.netlify.app/',
       description: 'Big basket is a online groceries selling website ',
+      Tech: ['React', 'Redux', 'JavaScript', 'CSS'],
     },
     {
       img: Beardo,
@@ -42,6 +40,7 @@ const Portfolio = () => {
       Github: 'https://github.com/leadernaga/Beardo.in',
       Live: 'https://beardoclone.netlify.app/',
       description: 'Beardo is a online mens grooming products website',
+      Tech: ['Javascript', 'CSS', 'HTML'],
     },
     {
       img: Apollo,
@@ -49,6 +48,7 @@ const Portfolio = () => {
       Github: 'http://github.com/leadernaga/Apollo247',
       Live: 'https://apollo24by7.netlify.app/',
       description: 'appolo is a online pharmacy and medical website',
+      Tech: ['JavaScript', 'CSS', 'HTML'],
     },
   ]
 
@@ -64,7 +64,15 @@ const Portfolio = () => {
                 <img src={elm.img} alt="bigbasket" />
               </div>
               <h3>{elm.title}</h3>
-              <p>{elm.description}</p>
+              <p>
+                {' '}
+                <span style={{ fontWeight: 800 ,}}>Summary :</span>{' '}
+                {elm.description}
+              </p>
+              <ul>
+                <li style={{ fontWeight: 800 }}>Tech Stack :</li>
+                {elm.Tech && elm.Tech.map((el) => <li>{el}</li>)}
+              </ul>
               <div className="portfolio__item-cta">
                 <a href={elm.Github} className="btn" target="__blank">
                   Github

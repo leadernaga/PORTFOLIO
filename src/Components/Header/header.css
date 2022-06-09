@@ -97,3 +97,38 @@ header {
     display: none;
   }
 }
+@media screen and (max-height: 700px) {
+
+  header {
+    height:120vh !important;
+  }
+  .me{
+    height:50vh;
+  }
+ .myimage{
+   height: 80vh !important;
+   position: absolute;
+   bottom: 0px;
+ }
+}
+@media screen and (max-width: 300px) {
+.me{
+  width:90% !important;
+  display:flex;
+  justify-content:center;
+}
+
+
+}
+
+@media screen and (min-height: 1040px) {
+  .me{
+    overflow: hidden;
+  }
+  .header__container{
+    height: 50vh !important;
+  }
+  header{
+    height: 70vh !important;
+  }
+}
