@@ -72,7 +72,6 @@
 
 /* ########################## MEDIA QUERIES (MEDIUM DEVICES) ########################## */
 
-
 @media screen and (max-width: 1024px) {
   header {
     height: 100vh;
@@ -123,22 +122,26 @@
 }
 @media screen and (max-width: 375px) {
   .about__container {
-    margin-top: 150px;
+    margin-top: 10px;
   }
 
   .about__me-image {
     transform: rotate(0deg);
   }
+  .myimg {
+    width: 80vw !important;
+  }
 }
 
 @media screen and (max-height: 800px), (max-width: 1034) {
-    .myimg {
-      height: 65vh !important;
-    
-    }
-    .about__me-image {
-      transform: rotate(0deg) !important;
-    }
-    
+  .myimg {
+    height: 45vh !important;
+    width: 70vw !important;
   }
- 
+  header{
+      height: 60vh !important;
+  }
+  .about__me-image {
+    transform: rotate(0deg) !important;
+  }
+}
