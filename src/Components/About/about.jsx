@@ -37,13 +37,7 @@ export const About = () => {
 
             </article>
           </div>
-          <p>Full-stack developer with specialization in
-MERN stack
-Done multiple projects with collaboration
-Looking for Full stack developer position in an
-organization
-where my skills and abilities will be fully
-            utilized.</p>
+          <p>Strong in design and in intuitive problem-solving skills. Proficient in MERN STACK. Passionate about implementing and launching new projects. Looking to start the career as an entry-level software developer with a reputed firm driven by technology.</p>
           <a href="#contact" className="btn btn-primary" >Let`s Talk</a>
         </div>
       </div>

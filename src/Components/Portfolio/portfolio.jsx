@@ -3,6 +3,7 @@ import './portfolio.css'
 import BigBasket from '../../assets/BigBasket.png'
 import Beardo from '../../assets/BeardoProduct.png'
 import Apollo from '../../assets/ApolloNew.png'
+import sugarCosmetics from '../../assets/sugarCosmetics.png'
 import tippy from 'tippy.js'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/animations/scale.css'
@@ -27,27 +28,49 @@ const Portfolio = () => {
 
   const arr = [
     {
-      img: BigBasket,
-      title: 'Big Basket Clone',
-      Github: 'https://github.com/S-hub1996/Big-basket-clone',
-      Live: 'https://big-basket-clone-by-masai-school.netlify.app/',
-      description: 'Big basket is a online groceries selling website ',
-      Tech: ['React', 'Redux', 'JavaScript', 'CSS'],
-    },
-    {
       img: Beardo,
       title: 'Beardo Clone',
       Github: 'https://github.com/leadernaga/Beardo.in',
       Live: 'https://beardoclone.netlify.app/',
-      description: 'Beardo is a online mens grooming products website',
+      description:
+        'An e-commerce website for the complete range of Men grooming products for your hair, beard, mustache, skin & face.',
       Tech: ['Javascript', 'CSS', 'HTML'],
     },
+    {
+      img: sugarCosmetics,
+      title: 'Sugar Cosmetics Clone',
+      Github: 'https://github.com/leadernaga/tart-clover-129',
+      Live: 'https://sugar-cosmetics.vercel.app/',
+      description:
+        "Welcome to SUGAR Cosmetics. A brand of choice for the women of today! And we're here to ensure you have a lot of fun with our makeup",
+      Tech: [
+        'CSS',
+        'React JS',
+        'Express JS',
+        'Node JS',
+        'MongoDB',
+        'JWT',
+        'Stripe Payments',
+        'Tailwind CSS',
+        'MUI',
+      ],
+    },
+    {
+      img: BigBasket,
+      title: 'Big Basket Clone',
+      Github: 'https://github.com/S-hub1996/Big-basket-clone',
+      Live: 'https://big-basket-clone-by-masai-school.netlify.app/',
+      description:
+        'BigBasket is an online food and grocery store that delivers personal and household needs right to customers doorstep.',
+      Tech: ['React', 'Redux', 'JavaScript', 'CSS'],
+    },
+
     {
       img: Apollo,
       title: 'Apollo Clone',
       Github: 'http://github.com/leadernaga/Apollo247',
       Live: 'https://apollo24by7.netlify.app/',
-      description: 'appolo is a online pharmacy and medical website',
+      description: 'Apollo 24|7 is a single online platform where you have access to a wide range of services such as online pharmacy, online doctor consultations, and diagnostic lab tests at home.',
       Tech: ['JavaScript', 'CSS', 'HTML'],
     },
   ]
@@ -64,15 +87,41 @@ const Portfolio = () => {
                 <img src={elm.img} alt="bigbasket" />
               </div>
               <h3>{elm.title}</h3>
-              <p>
+              <div>
                 {' '}
-                <span style={{ fontWeight: 800 ,}}>Summary :</span>{' '}
-                {elm.description}
-              </p>
-              <ul>
-                <li style={{ fontWeight: 800 }}>Tech Stack :</li>
-                {elm.Tech && elm.Tech.map((el) => <li>{el}</li>)}
-              </ul>
+                <p
+                  style={{
+                    fontWeight: 800,
+                    borderBottom: '1px solid white',
+                    paddingBottom: '2px',
+                    width: 'fit-content',
+                  }}
+                >
+                  Summary{' '}
+                </p>{' '}
+                <p>{elm.description}</p>
+              </div>
+              <div>
+                <p
+                  style={{
+                    fontWeight: 800,
+                    margin: 'auto',
+                    display: 'flex',
+                    margin: '10px 0px',
+                    borderBottom: '1px solid white',
+                    paddingBottom: '2px',
+                    width: 'fit-content',
+                  }}
+                >
+                  Tech Stack
+                </p>
+                <div className="techStack">
+                  {elm.Tech &&
+                    elm.Tech.map((el, index) => (
+                      <p className="btn tech">{el}</p>
+                    ))}
+                </div>
+              </div>
               <div className="portfolio__item-cta">
                 <a href={elm.Github} className="btn" target="__blank">
                   Github
